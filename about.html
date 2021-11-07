@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Linux Emulator</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="about-section">
+            <h1>About Us </h1>
+            <p>Some text about who we are and what we do.</p>
+            <p>Resize the browser window to see that this page is responsive by the way.</p>
+        </div>
+
+        <h2 style="text-align:center;color:white">About</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="/img/logo.png" alt="Jane" style="width:80%">
+                    
+                </div>
+                <div class="container" style="text-align:center;">
+                    <h2>Sahil Gaonkar</h2>
+                    <p class="title">Student</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat aliquid et quae aut
+                        cumque pariatur sed sit consectetur itaque dicta atque necessitatibus explicabo, amet neque
+                        ipsam totam consequatur ea maxime nemo in hic tempore natus. Veritatis architecto aliquid
+                        molestiae.</p>
+                    <p>jane@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+
+    </section>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    <script>const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }</script>
+</body>
+
+</html>

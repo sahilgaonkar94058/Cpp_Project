@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Linux Emulator</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Linux Emulator</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+<section id="main">
+    <div class="welcome-text">
+        <h1>LINUX EMULATOR</h1>
+        <p>YOUR ON THE LINUX BUDDY
+        </p>
+    </div>
+
+    <div class="side ">
+
+        <ul>
+            <li><a href="#home">Basic Linux Commands</a></li>
+            <li><a href="#lvm">LVM commands <br> (Logical Group Volume)</a> </li>
+            <li><a href="#docker">Docker commands</a></li>
+            <li><a href="#appache">Appache Webserver Commands</a></li>
+            <li><a href="https://cloudacademy.com/blog/aws-cli-10-useful-commands/" target="_blank"> AWS Basic
+                    Commands</a></li>
+        </ul>
+    </div>
+</section>
+    <section id="home">
+        <div class="info">
+            <h1>BASIC LINUX COMMANDS</h1>
+            <br>
+            <P class="bold">*INFORMATION ABOUT LINUX*
+                <br>
+                <br>
+                LINUX is an operating system or a kernel distributed under an open-source license. Its functionality
+                list is
+                quite like UNIX. The kernel is a program at the heart of the Linux operating system that takes care of
+                fundamental stuff, like letting hardware communicate with software.
+            </P>
+            <br>
+            <Ul>
+                <li> <B>Cal</B>
+                    <p>To open calender</p>
+                </li>
+                <hr>
+                <li> <B> Date</B>
+                    <p>Display date</p>
+                </li>
+                <hr>
+                <li><B>Jobs</B>
+                    <p>Display running jobs / programs</p>
+                </li>
+                <hr>
+                <li><B>fg&lt;ProcessId&gt;</B>
+                    <p>Start paused process </p>
+                </li>
+                <hr>
+                <li><B>&lt;command/process&gt;&</B>
+                    <p>& will run command in background </p>
+                </li>
+                <hr>
+                <li><B>which&lt;FileName&gt;</B>
+                    <p>Gives path of program/code file </p>
+                </li>
+                <hr>
+                <li><B>gedit &lt;command/program&gt;</B>
+                    <p>Gedit is text editor it will open file with given name
+                    </p>
+                </li>
+                <hr>
+                <li><B>mkdir &lt;DirName&gt;</B>
+                    <p> It will create directory with given name
+                    </p>
+                </li>
+                <hr>
+                <li><B>rmdir &lt;DirName&gt;</B>
+                    <p> It will remove directory with given name
+
+                    </p>
+                </li>
+                <hr>
+                <li><B>cd &lt;FolderName&gt;</B>
+                    <p> Change directory with given folder name or folder path </p>
+                </li>
+                <hr>
+                <li><B>cat &lt;fileName&gt;</B>
+                    <p> Display content inside file
+                    </p>
+                </li>
+                <hr>
+                <li><B>free -m </B>
+                    <p>shows memory(RAM) usage
+
+                    </p>
+                </li>
+                <hr>
+                <li><B>history </B>
+                    <p> displays previously executed commands </p>
+                </li>
+                <hr>
+            </Ul>
+
+        </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="lvm">
+        <div class=" lvm  midle">
+
+            <P class="bold">*INFORMATION ABOUT LVM*
+                <br>
+                <br>
+                In Linux, Logical Volume Manager is a device mapper framework that provides logical volume management
+                for
+                the Linux kernel. Most modern Linux distributions are LVM-aware to the point of being able to have their
+                root file systems on a logical volume
+
+            </P>
+            <br>
+
+            <h1>LVM COMMANDS</h1>
+            <br>
+            <ul>
+                <li><B>fdisk -l</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>pvcreate DiskName</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>pvdisplay</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>vgcreate disk1 disk2</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>vgdisplay</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>lvcreate --size (SizeINnumber)G --name lvname vgname</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>lvdisplay</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>mkfs.ext4 /dev/(vgname)/(lvname)</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>mount /dev/(vgname)/(lvname) (MountPointFolder)</B>
+                    <p> </p>
+                </li>
+                <hr>
+                <li><B>resize2fs /dev/(vgname)/(lvname)</B>
+                    <p> </p>
+                </li>
+                <hr>
+
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- docker commands -->
+    <section id="docker">
+
+        <div class=" midle">
+
+            <P class="bold">*INFORMATION ABOUT DOCKER*
+                <br>
+                <br>
+                Docker is a set of platform as a service products that use OS-level virtualization to deliver software
+                in packages called containers. Containers are isolated from one another and bundle their own software,
+                libraries and configuration files; they can communicate with each other through well-defined channels
+
+            </P>
+            <br>
+
+            <h1>DOCKER COMMANDS</h1>
+            <br>
+            <ul>
+                <li> <B>docker info </B>
+                    <p>To check information about docker</p>
+                </li>
+                <hr>
+                <li> <B>docker ps </B>
+                    <p>To check running containers</p>
+                </li>
+                <hr>
+                <li> <B>docker images </B>
+                    <p>To check installed images</p>
+                </li>
+                <hr>
+                <li><B>docker pull &lt;ImageName&gt;:&lt;ImgVersion&gt;</B>
+                    <p> To download image with specific version
+                        If you don’t give version it will download latest version by default
+                    </p>
+                </li>
+                <hr>
+                <li><B>docker run -it&lt;ImageName&gt;</B>
+                    <p> To launch new docker container and give you terminal
+                        Here i means interactive and t stands for terminal
+
+                    </p>
+                </li>
+                <hr>
+                <li><B>docker stop&lt;ContainerNam&gt;</B>
+                    <p> To stop running container </p>
+                </li>
+                <hr>
+                <li><B>docker ps -a</B>
+                    <p> To check all running and stopped containers
+                    </p>
+                </li>
+                <hr>
+                <li><B>docker start&lt;ContainerName&gt;</B>
+                    <p> To start stopped container </p>
+                </li>
+                <hr>
+                <li><B>docker attach&lt;ContainerName&gt;</B>
+                    <p> To use terminal of running container</p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- appache webserver -->
+    <section id="appache">
+        <div class=" midle">
+
+            <P>*INFORMATION ABOUT APPACHE WEBSERVER*
+                <br>
+                <br>
+
+                A web server is computer software and underlying hardware that accepts requests via HTTP, the network
+                protocol created to distribute web pages, or its secure variant HTTPS
+                After configuration you can go on http://localhost:80 you can see the default web to change default web
+                page
+                with your own page you can do this by replacing the file present in /var/www/html with your html file
+                also
+                you can change the default port number by modifing apache config file you will find following lind
+                binding
+                Apache to port 80 change listen on 80 to listen on any port you want
+
+            </P>
+            <br>
+
+            <h1>APPACHE WEBSERVER COMMANDS</h1>
+            <br>
+            <ul>
+
+                <li><B>yum install -y httpd </B>
+                    <p> This command is to install apache webserver</p>
+                </li>
+                <hr>
+                <li><B>systemctl start httpd </B>
+                    <p>To start webserver service </p>
+                </li>
+                <hr>
+                <li><B>systemctl stop httpd </B>
+                    <p>To stop the service </p>
+                </li>
+                <hr>
+
+            </ul>
+        </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+<script>const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    
+    hamburger.addEventListener("click", mobileMenu);
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll(".nav-link");
+    
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }</script>
+</body>
+</html>
